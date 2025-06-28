@@ -3,8 +3,8 @@
 set -x
 
 
-NEOFORGE_VERSION=21.1.180
-SERVER_VERSION=4.0
+NEOFORGE_VERSION=21.1.185
+SERVER_VERSION=4.2
 
 cd /data
 
@@ -18,7 +18,7 @@ fi
 if ! [[ -f "Server-Files-$SERVER_VERSION.zip" ]]; then
     rm -fr config defaultconfigs kubejs mods packmenu Server-Files-* neoforge*
 
-    curl -Lo "Server-Files-$SERVER_VERSION.zip" "https://mediafilez.forgecdn.net/files/6664/93/ServerFiles-$SERVER_VERSION.zip" || exit 9
+    curl -Lo "Server-Files-$SERVER_VERSION.zip" "https://mediafilez.forgecdn.net/files/6696/937/ServerFiles-$SERVER_VERSION.zip" || exit 9
 
     unzip -u -o "Server-Files-$SERVER_VERSION.zip" -d /data
     DIR_TEST="ServerFiles-$SERVER_VERSION"
