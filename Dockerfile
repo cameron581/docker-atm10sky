@@ -2,7 +2,7 @@
 
 FROM openjdk:21-buster
 
-LABEL version="4.2"
+LABEL version="4.3"
 
 
 RUN apt-get update && apt-get install -y curl unzip jq && \
